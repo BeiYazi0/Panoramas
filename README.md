@@ -1,24 +1,11 @@
 # Panoramas
 
-## Synopsis
-
-In this assignment, you will be writing code to align & stitch together a series of images into a panorama. You will then use your code on your own pictures to make a panorama. Take at least 3 images (although feel free to take more) to use for a panorama. You must take your own pictures for this assignment.
-
-To help you with this assignment, you should carefully read the required reading from the Szeliski text , and watch the associated module:
-  - Chapter 9.1: Szeliski, R. (2010). [Computer Vision: Algorithms and Applications](http://szeliski.org/Book/1stEdition.htm). Springer.
-  - Module 05-03: Panorama
-
-
 ## Instructions
-
-- Images in the `images/source/sample` directory are provided for testing -- *do not include these images in your submission* (although the output should appear in your report). 
-
-- Downsampling your images to 1-2 MB each will save processing time during development. (Larger images take longer to process, and may cause problems for the autograder which is resource-limited.)
 
 - We have provided a basic script to execute your panorama pipeline by running `python main.py`. The script will look inside each subfolder under `images/source` and attempt to apply the panorama procedure to the contents, and save the output to a folder with the same name as the input in `images/output/`. (For example, `images/source/sample` will produce output in `images/output/sample`.)
 
 
-### 1. Implement the functions in the `panorama.py` file.
+### Implement the functions in the `panorama.py` file.
 
   - `getImageCorners`: Return the x, y coordinates for the four corners of an input image
   - `findHomography`: Return the transformation between the keypoints of two images
